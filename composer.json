@@ -1,6 +1,6 @@
 {
     "name": "cysha/pxcms-chasenet",
-    "type": "pxcms-theme",
+    "type": "pxcms-themes",
     "description": "Chasenet Theme for Phoenix CMS",
     "license": "MIT",
     "authors": [
