@@ -1,0 +1,76 @@
+@import 'bootstrap/variables.less';
+@import 'bootstrap/mixins.less';
+@import 'bootstrap/utilities.less';
+
+/** Global Site Stuff **/
+body{
+    margin: 0;
+    font-family: "Muli","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #2d2d2d;
+    background-repeat: repeat;
+    background-color: rgba(176, 176, 176, 0.5);
+
+    > header{
+        border-bottom: 1px solid #000;
+        background-color: #1e1e1e;
+        background-repeat: repeat;
+
+        #topbar {
+            h1.logo{
+                color: #fff;
+            }
+        }
+
+
+        .navbar{
+            background-color: transparent;
+            height: 45px;
+            border-radius: 0px;
+            margin-left: -20px;
+
+            ul{
+                &.navbar-nav{
+                    li{
+                        a{
+                            color: white;
+                            &:hover, &:focus, &.active{
+                                background-color: rbga(0,0,0,0.3);
+                                color: #5697C4;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .selectize-control{
+                margin-top: 7px;
+            }
+        }
+
+    } // >header
+
+    > .container {
+        .breadcrumb{
+            background-color: transparent;
+        }
+
+        section{
+            background-color: white;
+            min-height: 700px;
+            padding: 5px;
+
+            .page-header{
+                margin: 0 0 20px;
+            }
+        }
+    }
+
+    > footer {
+        background-color: #1E1E1E;
+        background-image: url("../images/pattern.png");
+        background-repeat: repeat;
+        border-top: 1px solid #000000;
+        min-height: 200px;
+    }
+
+}

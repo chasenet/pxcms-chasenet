@@ -1,0 +1,16 @@
+{
+    "name": "cysha/pxcms-chasenet",
+    "type": "pxcms-theme",
+    "description": "Chasenet Theme for Phoenix CMS",
+    "license": "MIT",
+    "authors": [
+        { "name": "Pillus", "email": "pilus@chasenet.org" }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "composer/installers"               : "dev-master",
+    },
+    "repositories": [
+        { "type": "vcs", "url": "https://github.com/cysha/installers" }
+    ]
+}
