@@ -33,9 +33,9 @@ return array(
         },
 
         'beforeRenderTheme' => function ($theme) {
-            $theme->asset()->add('base', 'assets/css/bootstrap-theme.css', array('bootstrap'));
-            $theme->asset()->usePath()->add('base', 'css/styles.css', array('bootstrap'));
-            $theme->asset()->usePath()->add('theme', 'css/theme.css', array('base'));
+            //$theme->asset()->add('base', 'assets/css/bootstrap-theme.css', array('bootstrap'));
+            // $theme->asset()->usePath()->add('base', 'css/styles.css', array('bootstrap'));
+            $theme->asset()->usePath()->add('base', 'css/theme.css', array('bootstrap'));
             $theme->asset()->usePath()->add('app.js', 'js/app/application.js', array('base', 'js'));
             $theme->asset()->usePath()->add('modernizr', 'js/modernizr.js');
 

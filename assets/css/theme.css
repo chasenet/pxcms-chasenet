@@ -1,9 +1,13 @@
+@import url('http://fonts.googleapis.com/css?family=Muli');
 .clearfix:before,
-.clearfix:after {
+.clearfix:after,
+.partials.partial-post:before,
+.partials.partial-post:after {
   content: " ";
   display: table;
 }
-.clearfix:after {
+.clearfix:after,
+.partials.partial-post:after {
   clear: both;
 }
 .center-block {
@@ -42,25 +46,280 @@
 }
 /** Global Site Stuff **/
 body {
+  font-family: "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 22px;
+  color: #666666;
+  -webkit-font-smoothing: antialiased;
+}
+body section {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  body section {
+    float: left;
+    width: 100%;
+  }
+}
+body section.cols-2-left aside {
+  float: left !important;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  body section.cols-2-left aside {
+    float: left;
+    width: 25%;
+  }
+}
+body section.cols-2-left main {
+  float: right !important;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  body section.cols-2-left main {
+    float: left;
+    width: 75%;
+  }
+}
+body section.cols-2-right aside {
+  float: right !important;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  body section.cols-2-right aside {
+    float: left;
+    width: 25%;
+  }
+}
+body section.cols-2-right main {
+  float: left !important;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  body section.cols-2-right main {
+    float: left;
+    width: 75%;
+  }
+}
+body section.cols-3 aside:first-child {
+  float: left !important;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  body section.cols-3 aside:first-child {
+    float: left;
+    width: 16.66666667%;
+  }
+}
+body section.cols-3 aside:last-child {
+  float: right !important;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  body section.cols-3 aside:last-child {
+    float: left;
+    width: 16.66666667%;
+  }
+}
+body section main {
+  min-height: 500px;
+}
+body section main .items .grid-view {
+  margin-left: auto;
+  margin-right: auto;
+}
+/** Partials **/
+.partials.partial-post {
+  margin-left: -15px;
+  margin-right: -15px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.partials.partial-post > header {
+  padding: 5px 0;
+  background-color: #F5F5F5;
+}
+.partials.partial-post > header:before,
+.partials.partial-post > header:after {
+  content: " ";
+  display: table;
+}
+.partials.partial-post > header:after {
+  clear: both;
+}
+.partials.partial-post > header:before,
+.partials.partial-post > header:after {
+  content: " ";
+  display: table;
+}
+.partials.partial-post > header:after {
+  clear: both;
+}
+.partials.partial-post > header .avatar {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .partials.partial-post > header .avatar {
+    float: left;
+    width: 8.33333333%;
+  }
+}
+.partials.partial-post > header .avatar img {
+  max-height: 40px;
+  max-width: 40px;
+}
+.partials.partial-post > header .post-info {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .partials.partial-post > header .post-info {
+    float: left;
+    width: 41.66666667%;
+  }
+}
+.partials.partial-post > header .post-info .username {
+  font-size: 16px;
+}
+.partials.partial-post > header .post-info .posted-on {
+  font-size: 12px;
+}
+.partials.partial-post > header .post-options {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 5px 10px;
+}
+@media (min-width: 768px) {
+  .partials.partial-post > header .post-options {
+    float: left;
+    width: 50%;
+  }
+}
+.partials.partial-post > header .post-options .options {
+  float: right !important;
+}
+.partials.partial-post > main {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 10px 5px;
+}
+@media (min-width: 768px) {
+  .partials.partial-post > main {
+    float: left;
+    width: 100%;
+  }
+}
+.partials.partial-post > main:before,
+.partials.partial-post > main:after {
+  content: " ";
+  display: table;
+}
+.partials.partial-post > main:after {
+  clear: both;
+}
+.partials.partial-post > main:before,
+.partials.partial-post > main:after {
+  content: " ";
+  display: table;
+}
+.partials.partial-post > main:after {
+  clear: both;
+}
+/** Panel Tabs **/
+.panel-tabs {
+  position: relative;
+  bottom: 30px;
+  clear: both;
+  border-bottom: 1px solid transparent;
+}
+.panel-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+.panel-tabs > li > a {
+  margin-right: 2px;
+  margin-top: 4px;
+  line-height: .85;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+  color: #ffffff;
+}
+.panel-tabs > li > a:hover {
+  border-color: transparent;
+  color: #ffffff;
+  background-color: transparent;
+}
+.panel-tabs > li.active > a,
+.panel-tabs > li.active > a:hover,
+.panel-tabs > li.active > a:focus {
+  color: #fff;
+  cursor: default;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.23);
+  border-bottom-color: transparent;
+}
+/** Global Styles **/
+.title {
+  font-size: 16px;
+  font-weight: bold;
+}
+/** Global Site Stuff **/
+body {
   margin: 0;
   font-family: "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #2d2d2d;
-  background-repeat: repeat;
-  background-color: rgba(176, 176, 176, 0.5);
+  background-color: #181818;
 }
 body > header {
-  border-bottom: 1px solid #000;
-  background-color: #1e1e1e;
-  background-repeat: repeat;
+  background-color: #222222;
+  margin-top: 45px;
 }
 body > header #topbar h1.logo {
   color: #fff;
 }
 body > header .navbar {
-  background-color: transparent;
   height: 45px;
   border-radius: 0px;
   margin-left: -20px;
+}
+body > header .navbar ul {
+  float: right !important;
 }
 body > header .navbar ul.navbar-nav li a {
   color: white;
@@ -78,7 +337,6 @@ body > .container .breadcrumb {
   background-color: transparent;
 }
 body > .container section {
-  background-color: white;
   min-height: 700px;
   padding: 5px;
 }
@@ -86,9 +344,6 @@ body > .container section .page-header {
   margin: 0 0 20px;
 }
 body > footer {
-  background-color: #1E1E1E;
-  background-image: url("../images/pattern.png");
-  background-repeat: repeat;
   border-top: 1px solid #000000;
   min-height: 200px;
 }

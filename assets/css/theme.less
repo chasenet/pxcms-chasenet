@@ -1,19 +1,20 @@
-@import 'bootstrap/variables.less';
+// @import 'bootstrap/variables.less';
+@import 'variables.less';
 @import 'bootstrap/mixins.less';
 @import 'bootstrap/utilities.less';
+
+@import 'styles.less';
 
 /** Global Site Stuff **/
 body{
     margin: 0;
     font-family: "Muli","Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #2d2d2d;
-    background-repeat: repeat;
-    background-color: rgba(176, 176, 176, 0.5);
+    background-color: darken(#222222, 4%);
 
     > header{
-        border-bottom: 1px solid #000;
-        background-color: #1e1e1e;
-        background-repeat: repeat;
+        background-color: #222222;
+        //border-bottom: 1px solid #000;
+        margin-top: 45px;
 
         #topbar {
             h1.logo{
@@ -23,12 +24,14 @@ body{
 
 
         .navbar{
-            background-color: transparent;
+            //background-color: transparent;
             height: 45px;
             border-radius: 0px;
             margin-left: -20px;
 
             ul{
+                .pull-right;
+
                 &.navbar-nav{
                     li{
                         a{
@@ -55,7 +58,6 @@ body{
         }
 
         section{
-            background-color: white;
             min-height: 700px;
             padding: 5px;
 
@@ -66,9 +68,6 @@ body{
     }
 
     > footer {
-        background-color: #1E1E1E;
-        background-image: url("../images/pattern.png");
-        background-repeat: repeat;
         border-top: 1px solid #000000;
         min-height: 200px;
     }
