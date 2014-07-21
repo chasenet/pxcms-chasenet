@@ -19,6 +19,6 @@
 
 <header>
     <div id="topbar" class="container">
-        <h1 class="logo">{{ Config::get('app.site-name') }}</h1>
+        <h1 class="logo">{{{ Config::get('core::app.site-name') }}}</h1>
     </div>
 </header>
