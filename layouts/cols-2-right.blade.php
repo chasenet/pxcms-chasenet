@@ -26,6 +26,7 @@
 </head>
 
 <body class="{{{ $currentRoute }}}">
+
 {{ Theme::partial('theme.header') }}
 
 <div class="container">

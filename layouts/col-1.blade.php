@@ -41,17 +41,6 @@
     </section>
 </div>
 
-<section class="col-1">
-    <main>
-        <div class="container">
-            {{ Theme::partial('theme.msgs') }}
-        </div>
-        <div class="container">
-            {{ Theme::content() }}
-        </div>
-    </main>
-</section>
-
 {{ Theme::partial('theme.footer') }}
 
 {{ Theme::partial('theme.modal') }}
