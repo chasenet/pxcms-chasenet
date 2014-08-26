@@ -1,9 +1,9 @@
 <div class="form">
 {{ Former::horizontal_open()->action(URL::route('pxcms.user.login')) }}
     <div class="form-group">
-        <label class="control-label col-md-3" for="username">Username</label>
+        <label class="control-label col-md-3" for="email">Username</label>
         <div class="col-md-9">
-            <input type="text" class="form-control" id="username" name="username">
+            <input type="text" class="form-control" id="email" name="email">
         </div>
     </div>
     <div class="form-group">
