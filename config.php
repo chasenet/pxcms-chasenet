@@ -9,7 +9,7 @@ return array(
     'version' => '1.0',
 
     // theme options
-    'inherit' => null, //default
+    'inherit' => 'default', //default
 
     'events' => array(
 
